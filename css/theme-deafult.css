@@ -1,0 +1,53 @@
+.clear {
+  clear: both;
+}
+html,
+body {
+  color: #444;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #282828;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+p {
+  color: #666;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #444;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
