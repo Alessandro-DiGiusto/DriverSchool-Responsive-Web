@@ -1,8 +1,4 @@
 /*
-====================
-	Template Name: Bravado
-	Author: EM40
-===============================*/
 	/*  CSS INDEX
 	=====================
 	* HEADER AREA CSS 
@@ -45,6 +41,7 @@ html,
 body {
     height: 100%;
     position: relative;
+    z-index: 1;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -109,11 +106,12 @@ a {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: #878787;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 a:hover {
-    color: #44B272;
+    /* color: #44B272; */
+    color: #c172ab;
     text-decoration: none;
 }
 a:active,
@@ -3580,3 +3578,47 @@ select:focus {
   color:#44b272;
 }
 
+/* -------------------------- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+  }
+  
+  .dropbtn {
+    background-color: rgba(0, 0, 0, .0);
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #c172ab;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
