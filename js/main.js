@@ -217,6 +217,15 @@
 
     });
 
+    // Ottieni la data corrente
+    var dataCorrente = new Date();
+
+    // Converti la data corrente nel formato richiesto (yyyy-mm-dd)
+    var formatoData = dataCorrente.toISOString().split('T')[0]; // Estrae la parte yyyy-mm-dd
+
+    // Assegna il valore della data corrente all'elemento input
+    document.getElementById('start').value = formatoData;
+    document.getElementById('start').min = formatoData;
 
     /*---------------------
     scrollUp active js 

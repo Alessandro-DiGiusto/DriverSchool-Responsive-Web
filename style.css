@@ -3379,6 +3379,13 @@ background-color: rgba(0,0,0,0.7);
     position: absolute;
     left: auto;
 }
+.app-field span.icon-style3 {
+    color: #44B272;
+    right: 10px;
+    position: absolute;
+    left: auto;
+    top: 44px;
+}
 .app-field > input[type="text"],
 .app-field > input[type="email"] {
 
