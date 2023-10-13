@@ -23,10 +23,10 @@ router.get('/list', (req, res) => {
 router.post('/', (req, res) => {
     //connection.connect();
     // Leggi i dati inviati dal form
-    const { nomeCliente, email, telefono, dataScelta, timePreno, veicolo, modello } = req.body;
-    const query = 'INSERT INTO appuntamento (data, ora, FK_Utente) VALUES (?,?,?);';
+    const { nome, cognome, email, telefono, password } = req.body;
+    const query = 'INSERT INTO Utente (nome, cognome, email, tel, pw) VALUES (?,?,?,?,?);';
 
-    mysql.query(query, [dataScelta, timePreno, 1], (error, results) => {
+    mysql.query(query, [nome, cognome, email, telefono, password], (error, results) => {
         if (error) {
             throw error;
         }
