@@ -3,7 +3,7 @@ const cors = require('cors');
 const port = process.env.PORT || 8000; // this is our port number
 const fs = require('fs');
 const bookingRoutes = require('./routes/bookings');
-
+const signInRoutes = require('./routes/signIn');
 
 //NEW
 const bodyParser = require('body-parser');
@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 
 
 app.use('/prenota', bookingRoutes);
+app.use('/signIn', signInRoutes);
 
 //NEW
 
