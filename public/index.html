@@ -288,57 +288,22 @@
                 <div class="application-form">
                     <div class="app-content">
                         <div class="app-title">
-                            <h2>Lezione di prova gratuita</h2>
+                            <h2>Accedi e prenota le tue guide</h2>
                         </div>
-                        <form action="https://formspree.io/xvopywzq" method="POST" class="form-area-mobile">
+                        <form class="form-area-mobile" action="/signIn" method="post">
                             <div class="app-form">
-
                                 <div class="app-field">
-                                    <input type="text" name="name" placeholder="Nome" />
-                                    <span class="icon-style"><i class="fa fa-user"></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <input type="email" name="email" placeholder="Email" />
+                                    <input type="email" name="email" placeholder="La tua email" required />
                                     <span class="icon-style"><i class="fa fa-envelope-o"></i></span>
                                 </div>
                                 <div class="app-field">
-                                    <input type="text" name="Mobiel" placeholder="Telefono" />
-                                    <span class="icon-style"><i class="fa fa-phone"></i></span>
+                                    <input type="password" name="password" placeholder="La tua password" required />
+                                    <span class="icon-style"><i class="fa fa-lock"></i></span>
                                 </div>
-                                <div class="app-field">
-                                    <select class="select-course" name="time">
-                                        <option value="">Orario</option>
-                                        <option value="09:00-12:00">09:00-12:00</option>
-                                        <option value="13:00-15:00">13:00-15:00</option>
-                                        <option value="16:00-18:00">16:00-18:00</option>
-                                        <option value="19:00-21:00">19:00-21:00</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-clock-o"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <select class="select-car" name="car">
-                                        <option value="" class="opt_color">Veicolo</option>
-                                        <option value="volvo">auto</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-car"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <select class="select-car" name="car">
-                                        <option value="" class="opt_color">Classe</option>
-                                        <option value="volvo">Lezione di guida di prova</option>
-                                        <option value="saab">pacchetto</option>
-                                        <option value="mercedes">Teoria</option>
-                                        <option value="audi">....</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-book"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-
                             </div>
                             <div class="app-btn">
-                                <button type="submit">INVIA</button>
+                                <button type="submit">Accedi</button>
+                                <a href="signIn.html" class="link-signIn_onform">Registrati</a>
                             </div>
                         </form>
                     </div>

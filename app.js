@@ -4,6 +4,7 @@ const port = process.env.PORT || 8000; // this is our port number
 const fs = require('fs');
 const bookingRoutes = require('./routes/bookings');
 const signInRoutes = require('./routes/signIn');
+const loginRoutes = require('./routes/login');
 
 //NEW
 const bodyParser = require('body-parser');
@@ -25,6 +26,7 @@ app.use(bodyParser.json());
 
 app.use('/prenota', bookingRoutes);
 app.use('/signIn', signInRoutes);
+app.use('/login', loginRoutes);
 
 //NEW
 
