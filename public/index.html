@@ -232,19 +232,22 @@
                                     <div class="app-title">
                                         <h2>Accedi</h2>
                                     </div>
-                                    <!-- <form action="https://formspree.io/xvopywzq" method="POST"> -->
-                                    <form action="/login" method="POST">
-                                        <!-- /prenota -->
+                                    <form class="form-area-mobile" action="/login" method="POST">
                                         <div class="app-form">
                                             <div class="app-field">
                                                 <input type="email" name="email" placeholder="La tua email" required />
                                                 <span class="icon-style"><i class="fa fa-envelope-o"></i></span>
                                             </div>
                                             <div class="app-field">
-                                                <input type="password" name="password" placeholder="La tua password"
-                                                    required />
+                                                <input type="password" name="password" id="password"
+                                                    placeholder="La tua password" required />
                                                 <span class="icon-style"><i class="fa fa-lock"></i></span>
+                                                <span class="password-toggle" id="toggle-password"
+                                                    onclick="togglePasswordVisibility()">
+                                                    <i class="fa fa-eye"></i>
+                                                </span>
                                             </div>
+
                                         </div>
                                         <div class="app-btn">
                                             <button type="submit">Accedi</button>
@@ -253,8 +256,24 @@
                                     </form>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
+                    <script>
+                        function togglePasswordVisibility() {
+                            var passwordField = document.getElementById("password");
+                            var toggleButton = document.getElementById("toggle-password");
+
+                            if (passwordField.type === "password") {
+                                passwordField.type = "text";
+                                toggleButton.innerHTML = '<i class="fa fa-eye-slash"></i>';
+                            } else {
+                                passwordField.type = "password";
+                                toggleButton.innerHTML = '<i class="fa fa-eye"></i>';
+                            }
+                        }
+                    </script>
 
                     <!-- SLIDER PROGRESS -->
                     <div id="htmlcaption2" class="nivo-html-caption slider-caption-1">
@@ -284,7 +303,6 @@
     <div class="container home_2 sm-dvice">
         <div class="row">
             <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
-                <!-- SLIDER APPLICATION FORM -->
                 <div class="application-form">
                     <div class="app-content">
                         <div class="app-title">
@@ -297,8 +315,13 @@
                                     <span class="icon-style"><i class="fa fa-envelope-o"></i></span>
                                 </div>
                                 <div class="app-field">
-                                    <input type="password" name="password" placeholder="La tua password" required />
+                                    <input type="password" name="password" id="password" placeholder="La tua password"
+                                        required />
                                     <span class="icon-style"><i class="fa fa-lock"></i></span>
+                                    <span class="password-toggle" id="toggle-password"
+                                        onclick="togglePasswordVisibility()">
+                                        <i class="fa fa-eye"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="app-btn">
@@ -308,12 +331,9 @@
                         </form>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
-
 
     <!-- ABOUT AREA -->
     <div class="about-area home_2">
@@ -614,13 +634,45 @@
                     </div>
                 </div>
                 <!-- SINGLE COUNTER UP ITEM -->
+                <!-- faccio il controllo giorno -->
+                <script>
+                    // Funzione per calcolare il nuovo valore
+                    function calcolaNuovoValore() {
+                        // Ottieni l'anno corrente
+                        var dataCorrente = new Date();
+                        var annoCorrente = dataCorrente.getFullYear();
+
+                        // Estrai le ultime due cifre dell'anno
+                        var ultimeDueCifre = annoCorrente % 100;
+
+                        // Visualizza le ultime due cifre --> ultimeDueCifre
+                        return ultimeDueCifre - 10;
+                    }
+
+                    // Funzione per aggiornare il valore nell'HTML
+                    function aggiornaValore() {
+                        // Seleziona l'elemento con la classe "counterup"
+                        var elementoCounterup = document.querySelector('.counterup-number');
+
+                        if (elementoCounterup) {
+                            // Calcola il nuovo valore
+                            var nuovoValore = calcolaNuovoValore();
+
+                            // Aggiorna il contenuto dell'elemento con il nuovo valore
+                            elementoCounterup.textContent = nuovoValore;
+                        }
+                    }
+
+                    // Chiama la funzione per aggiornare il valore al caricamento della pagina
+                    window.addEventListener('load', aggiornaValore);
+                </script>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-counter">
                         <div class="counter-icon">
                             <i class="fa fa-university"></i>
                         </div>
                         <div class="counter-text">
-                            <span class="counterup">13</span>
+                            <span class="counterup-number"></span>
                             <p> Anni d'esperienza</p>
                         </div>
                     </div>
@@ -907,11 +959,6 @@
         </div>
     </div>
     </div>
-
-
-
-
-
 
     <!--CONTACT US AREA -->
     <div class="contact_me home_3" id="contact">

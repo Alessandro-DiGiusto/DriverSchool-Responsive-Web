@@ -427,6 +427,16 @@ ul>li>a {
     margin-left: 30px;
 }
 
+.column-1 {
+    width: 50%;
+    /* Larghezza del 50% per ciascuna colonna */
+    text-align: center;
+    /* Allinea il testo al centro all'interno delle colonne */
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: auto;
+}
+
 /* Stile per i campi di input e label */
 .column input,
 .column label {

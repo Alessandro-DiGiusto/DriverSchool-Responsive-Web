@@ -1,38 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="fullcalendar/main.css" rel="stylesheet" />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="/script.js" type="text/javascript"></script>
+
+    <!--Bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--Dayschedule widget library from https://dayschedule.com/widget -->
+    <script src="https://cdn.jsdelivr.net/npm/dayschedule-widget@latest/dist/dayschedule-widget.min.js" defer></script>
+    <script>
+        daySchedule.initPopupWidget({
+            "url": "https://provautoscuolaalvolante.dayschedule.com",
+            "type": "popup",
+            "color": {
+                "primary": "#0f0980",
+                "secondary": "#afeefe"
+            }
+        })
+    </script>
 </head>
 
 <body>
     <header>
-        <!-- Intestazione simile alle altre pagine -->
-        <h1>Benvenuto</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/servizi">Servizi</a></li>
-                <li><a href="/contatti">Contatti</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> Your Logo </a>
+            </div>
         </nav>
     </header>
+    <div class="container px-3 my-5">
+        <main>
+            <div class="row">
+                <div class="col-md-6 my-auto">Che bello rivederti
+                    <h1>Benvenuto, <%= user.nome %>
+                    </h1>
+                    <!-- chatgpt QUI SU h1 VOGLIO CHE FAI VEDERE IL NOME DEL MIO CLIENTE CHE HA EFFETTUATO L'ACCESSO -->
+                    <!-- <h1 class="display-4" id="nomeUtente"></h1> -->
+                    <p class="lead">
+                        Click on the <strong>book appointment</strong> button to try this
+                        out. You can customize the color, calendar availability etc by
+                        passing the options on widget
+                        <a href="https://provautoscuolaalvolante.dayschedule.com">
+                            See documentation &rarr;
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://s3.amazonaws.com/us-east-1.data.dayschedule.com/uploads/org-47/Pages/107-1643352013326-Doctor%20Instagram%20Post%20(824%20%C3%97%20552%20px).png"
+                        class="img-fluid" />
+                </div>
+            </div>
 
-    <main>
-        <h2>Calendario Prenotazioni</h2>
-        <div id="calendario">
-            <!-- Calendario verrà creato e gestito tramite JavaScript -->
+            <div class="row mt-4 mb-4">
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">Orthopedic</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dr Tawang</h5>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="openDaySchedule('https://provautoscuolaalvolante.dayschedule.com')">
+                                Book appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="page-footer font-small pt-4 px-4">
+        <!-- Footer Text -->
+        <div class="container d-flex justify-content-center">
+            <p>©</p>
+            <p class="copyAnno_P" style="padding-right: 3px;"></p>
+            <p>Copyright autoscuolealvolante.com Autoscuole Al Volante di Salvatore Torrisi S.r.l.s</p>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Nome del Tuo Sito</p>
+        <!-- Footer Text -->
     </footer>
-
-    <script src="fullcalendar/main.js"></script>
-    <script src="fullcalendar/locales-all.js"></script>
-    <script src="./script.js"></script>
 </body>
+<script>
+    function copyAnno() {
+        var dataCorrente = new Date();
+        var annoCorrente = dataCorrente.getFullYear();
+        return annoCorrente;
+    }
+
+    function aggiornaAnno() {
+        var valore = document.querySelector('.copyAnno_P');
+        if (valore) {
+            var nuovoValore = copyAnno();
+            valore.textContent = nuovoValore;
+        }
+    }
+
+    window.addEventListener('load', aggiornaAnno);
+
+    //------
+
+    // Ottieni il nome dell'utente dal valore inserito nella pagina dal server
+    const nomeUtente = "<%= nomeUtente %>"; // Utilizzo di una variabile server-side
+    // Inserisci il nome dell'utente nell'elemento HTML
+    document.getElementById('nomeUtente').textContent = nomeUtente;
+</script>
 
 </html>
