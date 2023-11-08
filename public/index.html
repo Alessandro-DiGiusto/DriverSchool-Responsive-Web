@@ -101,7 +101,7 @@
                     <div class="menu home_2">
                         <ul>
                             <li><a href="#home">Home</a></li>
-                            <li><a href="#service">CHI SIAMO</a></li>
+                            <li><a href="#about-storys">CHI SIAMO</a></li>
                             <li><a href="#project">STUDENTI</a></li>
 
                             <li class="dropdown"> <!-- Aggiunto class="dropdown" per applicare stili CSS -->
@@ -111,14 +111,21 @@
                                     <li><a href="pagina1.html">Conseguimento patenti</a></li>
                                     <li><a href="pagina2.html">ESCAVATORI</a></li>
                                     <li><a href="pagina3.html">TRATTORI AGRICOLI</a></li>
+<<<<<<< HEAD
+=======
                                     <li><a href="pagina4.html">POMPE CALCESTRUZZO</a></li>
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
                                     <li><a href="pagina5.html">SOLLEVATORI TELESCOPICI</a></li>
                                     <li><a href="pagina1.html">GRU PER AUTOCARRO</a></li>
                                     <li><a href="pagina1.html">CARRELLI ELEVATORI</a></li>
                                     <li><a href="pagina1.html">PIATTAFORME AEREE</a></li>
+<<<<<<< HEAD
+                                    <li><a href="pagina1.html">GRU A TORRE</a></li>
+=======
                                     <li><a href="pagina1.html">PALE MECCANICHE</a></li>
                                     <li><a href="pagina1.html">GRU A TORRE</a></li>
                                     <li><a href="pagina1.html">TERNE</a></li>
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
                                 </ul>
                             </li>
 
@@ -126,17 +133,13 @@
                             <div class="dropdown">
                                 <button class="dropbtn">PATENTI</button>
                                 <div class="dropdown-content">
-                                    <a href="pagina1.html">AUTOGRU</a>
                                     <a href="pagina2.html">ESCAVATORI</a>
                                     <a href="pagina3.html">TRATTORI AGRICOLI</a>
-                                    <a href="pagina4.html">POMPE CALCESTRUZZO</a>
                                     <a href="pagina5.html">SOLLEVATORI TELESCOPICI</a>
                                     <a href="pagina1.html">GRU PER AUTOCARRO</a>
                                     <a href="pagina1.html">CARRELLI ELEVATORI</a>
                                     <a href="pagina1.html">PIATTAFORME AEREE</a>
-                                    <a href="pagina1.html">PALE MECCANICHE</a>
                                     <a href="pagina1.html">GRU A TORRE</a>
-                                    <a href="pagina1.html">TERNE</a>
                                 </div>
                             </div>
 
@@ -232,19 +235,35 @@
                                     <div class="app-title">
                                         <h2>Accedi</h2>
                                     </div>
+<<<<<<< HEAD
+                                    <form class="form-area-mobile" action="/login" method="POST">
+=======
                                     <!-- <form action="https://formspree.io/xvopywzq" method="POST"> -->
                                     <form action="/login" method="POST">
                                         <!-- /prenota -->
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
                                         <div class="app-form">
                                             <div class="app-field">
                                                 <input type="email" name="email" placeholder="La tua email" required />
                                                 <span class="icon-style"><i class="fa fa-envelope-o"></i></span>
                                             </div>
                                             <div class="app-field">
+<<<<<<< HEAD
+                                                <input type="password" name="password" id="password"
+                                                    placeholder="La tua password" required />
+                                                <span class="icon-style"><i class="fa fa-lock"></i></span>
+                                                <span class="password-toggle" id="toggle-password"
+                                                    onclick="togglePasswordVisibility()">
+                                                    <i class="fa fa-eye"></i>
+                                                </span>
+                                            </div>
+
+=======
                                                 <input type="password" name="password" placeholder="La tua password"
                                                     required />
                                                 <span class="icon-style"><i class="fa fa-lock"></i></span>
                                             </div>
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
                                         </div>
                                         <div class="app-btn">
                                             <button type="submit">Accedi</button>
@@ -253,8 +272,24 @@
                                     </form>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
+                    <script>
+                        function togglePasswordVisibility() {
+                            var passwordField = document.getElementById("password");
+                            var toggleButton = document.getElementById("toggle-password");
+
+                            if (passwordField.type === "password") {
+                                passwordField.type = "text";
+                                toggleButton.innerHTML = '<i class="fa fa-eye-slash"></i>';
+                            } else {
+                                passwordField.type = "password";
+                                toggleButton.innerHTML = '<i class="fa fa-eye"></i>';
+                            }
+                        }
+                    </script>
 
                     <!-- SLIDER PROGRESS -->
                     <div id="htmlcaption2" class="nivo-html-caption slider-caption-1">
@@ -284,74 +319,40 @@
     <div class="container home_2 sm-dvice">
         <div class="row">
             <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
-                <!-- SLIDER APPLICATION FORM -->
                 <div class="application-form">
                     <div class="app-content">
                         <div class="app-title">
-                            <h2>Lezione di prova gratuita</h2>
+                            <h2>Accedi e prenota le tue guide</h2>
                         </div>
-                        <form action="https://formspree.io/xvopywzq" method="POST" class="form-area-mobile">
+                        <form class="form-area-mobile" action="/signIn" method="post">
                             <div class="app-form">
-
                                 <div class="app-field">
-                                    <input type="text" name="name" placeholder="Nome" />
-                                    <span class="icon-style"><i class="fa fa-user"></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <input type="email" name="email" placeholder="Email" />
+                                    <input type="email" name="email" placeholder="La tua email" required />
                                     <span class="icon-style"><i class="fa fa-envelope-o"></i></span>
                                 </div>
                                 <div class="app-field">
-                                    <input type="text" name="Mobiel" placeholder="Telefono" />
-                                    <span class="icon-style"><i class="fa fa-phone"></i></span>
+                                    <input type="password" name="password" id="password" placeholder="La tua password"
+                                        required />
+                                    <span class="icon-style"><i class="fa fa-lock"></i></span>
+                                    <span class="password-toggle" id="toggle-password"
+                                        onclick="togglePasswordVisibility()">
+                                        <i class="fa fa-eye"></i>
+                                    </span>
                                 </div>
-                                <div class="app-field">
-                                    <select class="select-course" name="time">
-                                        <option value="">Orario</option>
-                                        <option value="09:00-12:00">09:00-12:00</option>
-                                        <option value="13:00-15:00">13:00-15:00</option>
-                                        <option value="16:00-18:00">16:00-18:00</option>
-                                        <option value="19:00-21:00">19:00-21:00</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-clock-o"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <select class="select-car" name="car">
-                                        <option value="" class="opt_color">Veicolo</option>
-                                        <option value="volvo">auto</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-car"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-                                <div class="app-field">
-                                    <select class="select-car" name="car">
-                                        <option value="" class="opt_color">Classe</option>
-                                        <option value="volvo">Lezione di guida di prova</option>
-                                        <option value="saab">pacchetto</option>
-                                        <option value="mercedes">Teoria</option>
-                                        <option value="audi">....</option>
-                                    </select>
-                                    <span class="icon-style"><i class="fa fa-book"></i></span>
-                                    <span class="icon-style2"><i class="fa fa-angle-down "></i></span>
-                                </div>
-
                             </div>
                             <div class="app-btn">
-                                <button type="submit">INVIA</button>
+                                <button type="submit">Accedi</button>
+                                <a href="signIn.html" class="link-signIn_onform">Registrati</a>
                             </div>
                         </form>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 
-
     <!-- ABOUT AREA -->
-    <div class="about-area home_2">
+    <div class="about-area home_2" id="about-storys">
         <div class="container">
             <div class="row">
                 <!--  About thumb  -->
@@ -372,14 +373,29 @@
                             <h2>AutoScuole <span>Al Volante</span></h2>
                         </div>
                         <div class="story-content">
-                            <p>Da autoscuolealvolante.com prendere lezioni di guida è molto divertente. Nella nostra
-                                scuola guida sarai istruito in modo piacevole e professionale. Ti verrà insegnato da un
-                                istruttore qualificato che ha la giusta mentalità per darti l'attenzione personale di
-                                cui hai bisogno.</p>
+                            <p class="story-2">
+                                Le Autoscuole Al Volante di Salvatore Torrisi operano nel settore delle autoscuole dal
+                                2009.
+                            </p>
+                            <p class="story-2">
+                                Con l'esperienza maturata nel settore ed una particolare sensibilità verso l'utilizzo di
+                                moderne attrezzature e avanzate metodologie d'insegnamento cerchiamo di soddisfare le
+                                esigenze dei nostri clienti offrendo competenza, cortesia e professionalità.
+                            </p>
+                            <p class="story-2">
+                                La competenza e l’esperienza di un grande gruppo mette a disposizione tecniche e
+                                supporti
+                                sempre più innovativi per migliorare metodi di insegnamento utili a facilitare
+                                l’apprendimento.
+                                Tutto ciò al fine di ridurre i tempi di preparazione agli esami teorici e pratici,
+                                ridurre i margini di errore e garantire comunque un’ altissima qualità dei servizi.
+                                La formazione di nuovi conducenti capaci e responsabili è l’obbiettivo delle Nostre
+                                Autoscuole
+                            </p>
 
                             <p class="story-2">Siamo attivi in Catania e San Giovanni La Punta. La durata della lezione
-                                è di 60 minuti. Puoi programmare tu stesso le ore secondo i tuoi impegni. Non aspettare
-                                troppo e iscriviti su autoscuolealvolante.com con una lezione di prova GUIDA e non
+                                è di 30 minuti. Puoi programmare tu stesso le ore secondo i tuoi impegni. Non aspettare
+                                troppo e iscriviti su autoscuolealvolante.com con una lezione di GUIDA e non
                                 vincolante.</p>
                             <div class="read_more_btn">
                                 <a href=#contact>Contattaci</a>
@@ -649,13 +665,45 @@
                     </div>
                 </div>
                 <!-- SINGLE COUNTER UP ITEM -->
+                <!-- faccio il controllo giorno -->
+                <script>
+                    // Funzione per calcolare il nuovo valore
+                    function calcolaNuovoValore() {
+                        // Ottieni l'anno corrente
+                        var dataCorrente = new Date();
+                        var annoCorrente = dataCorrente.getFullYear();
+
+                        // Estrai le ultime due cifre dell'anno
+                        var ultimeDueCifre = annoCorrente % 100;
+
+                        // Visualizza le ultime due cifre --> ultimeDueCifre
+                        return ultimeDueCifre - 10;
+                    }
+
+                    // Funzione per aggiornare il valore nell'HTML
+                    function aggiornaValore() {
+                        // Seleziona l'elemento con la classe "counterup"
+                        var elementoCounterup = document.querySelector('.counterup-number');
+
+                        if (elementoCounterup) {
+                            // Calcola il nuovo valore
+                            var nuovoValore = calcolaNuovoValore();
+
+                            // Aggiorna il contenuto dell'elemento con il nuovo valore
+                            elementoCounterup.textContent = nuovoValore;
+                        }
+                    }
+
+                    // Chiama la funzione per aggiornare il valore al caricamento della pagina
+                    window.addEventListener('load', aggiornaValore);
+                </script>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-counter">
                         <div class="counter-icon">
                             <i class="fa fa-university"></i>
                         </div>
                         <div class="counter-text">
-                            <span class="counterup">13</span>
+                            <span class="counterup-number"></span>
                             <p> Anni d'esperienza</p>
                         </div>
                     </div>
@@ -674,7 +722,7 @@
                 <div class="col-md-12">
                     <!--SECTION TITLE ITEM-->
                     <div class="section_title">
-                        <h2>Le nostre patenti<span> speciali</span></h2>
+                        <h2>Patentini per Attrezzature di<span> Lavoro</span></h2>
                         <p>A seconda delle tue necessità, autoscuolealvolante.com offre diverse patenti, comprese di
                             lezioni di guida.<br>Tra le altre cose, puoi scegliere tra lezioni individuali o scegliere
                             uno dei nostri pacchetti.
@@ -689,7 +737,7 @@
                     <div class="single_pricing">
                         <div class="pricing_content">
                             <div class="pricing_title">
-                                <h2>Autogru</h2>
+                                <h2>Escavatori, Pale Meccaniche e Terne</h2>
                             </div>
                             <div class="pricing_body">
                                 <div class="pricing_bottom">
@@ -705,12 +753,13 @@
                         </div>
                     </div>
                 </div>
+
                 <!--SINGLE PRICING ITEM-->
                 <div class="col-md-3 col-sm-6">
                     <div class="single_pricing">
                         <div class="pricing_content">
                             <div class="pricing_title">
-                                <h2>Escavatori</h2>
+                                <h2>Carrelli elevatori e Telescopici</h2>
                             </div>
                             <div class="pricing_body">
                                 <div class="pricing_bottom">
@@ -726,12 +775,13 @@
                         </div>
                     </div>
                 </div>
+
                 <!--SINGLE PRICING ITEM-->
                 <div class="col-md-3 col-sm-6">
                     <div class="single_pricing">
                         <div class="pricing_content">
                             <div class="pricing_title">
-                                <h2>Trattori agricoli</h2>
+                                <h2>Trattori<br>agricoli</h2>
                             </div>
                             <div class="pricing_body">
                                 <div class="pricing_bottom">
@@ -747,33 +797,13 @@
                         </div>
                     </div>
                 </div>
+
                 <!--SINGLE PRICING ITEM-->
                 <div class="col-md-3 col-sm-6">
                     <div class="single_pricing">
                         <div class="pricing_content">
                             <div class="pricing_title">
-                                <h2>Pompe calcestruzzo</h2>
-                            </div>
-                            <div class="pricing_body">
-                                <div class="pricing_bottom">
-                                    <a href=#contact>
-                                        <div class="order_now">
-                                            <span>
-                                                Chiedi
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--SINGLE PRICING ITEM-->
-                <div class="col-md-3 col-sm-6">
-                    <div class="single_pricing">
-                        <div class="pricing_content">
-                            <div class="pricing_title">
-                                <h2>Sollevatori telescopici</h2>
+                                <h2>Sollevatori<br>telescopici</h2>
                             </div>
                             <div class="pricing_body">
                                 <div class="pricing_bottom">
@@ -810,27 +840,7 @@
                         </div>
                     </div>
                 </div>
-                <!--SINGLE PRICING ITEM-->
-                <div class="col-md-3 col-sm-6">
-                    <div class="single_pricing">
-                        <div class="pricing_content">
-                            <div class="pricing_title">
-                                <h2>Carrelli elevatori</h2>
-                            </div>
-                            <div class="pricing_body">
-                                <div class="pricing_bottom">
-                                    <a href=#contact>
-                                        <div class="order_now">
-                                            <span>
-                                                Chiedi
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <!--SINGLE PRICING ITEM-->
                 <div class="col-md-3 col-sm-6">
                     <div class="single_pricing">
@@ -852,27 +862,7 @@
                         </div>
                     </div>
                 </div>
-                <!--SINGLE PRICING ITEM-->
-                <div class="col-md-3 col-sm-6">
-                    <div class="single_pricing">
-                        <div class="pricing_content">
-                            <div class="pricing_title">
-                                <h2>Pale Meccaniche</h2>
-                            </div>
-                            <div class="pricing_body">
-                                <div class="pricing_bottom">
-                                    <a href=#contact>
-                                        <div class="order_now">
-                                            <span>
-                                                Chiedi
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <!--SINGLE PRICING ITEM-->
                 <div class="col-md-3 col-sm-6">
                     <div class="single_pricing">
@@ -915,38 +905,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!--SINGLE PRICING ITEM-->
-                <div class="col-md-3 col-sm-6">
-                    <div class="single_pricing">
-                        <div class="pricing_content">
-                            <div class="pricing_title">
-                                <h2>kevin</h2>
-                            </div>
-                            <div class="pricing_body">
-                                <div class="pricing_bottom">
-                                    <a href=#contact>
-                                        <div class="order_now">
-                                            <span>
-                                                Chiedi
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
     </div>
-
-
-
-
-
 
     <!--CONTACT US AREA -->
     <div class="contact_me home_3" id="contact">
@@ -1019,7 +981,7 @@
                         </div>
                         <div class="widget_about">
                             <div class="about_desc">
-                                <p>Via Ravanusa, 28 Catania CT
+                                <p>Via Ravanusa, 28 San Giovanni La Punta CT
                                     <br><a href="+393342306783">Cel: 334 2306 783</a>
                                     <br><a href="+390957514043">Tel: 095 7514 043</a>
                                     <br>Fax: 095 7514 043
