@@ -22,15 +22,15 @@ router.post('/', async (req, res) => {
             const passwordMatch = await bcrypt.compare(password, user.pw);
 
             if (passwordMatch) {
-                // Password corretta, reindirizza l'utente a '/login.html'
-                res.redirect('/login.html');
+                // Password corretta, renderizza la pagina login.html e passa il nome dell'utente
+                res.render('login', { nomeUtente: user.nome, cognomeUtente: user.cognome, telUtente: user.tel, emailUtente: user.email, logUtente: user.created });
             } else {
                 // Password errata, reindirizza l'utente a '/index.html' con un messaggio di errore
                 res.redirect('/index.html?loginError=PasswordErrata');
             }
         } else {
-            // Email non trovata, reindirizza l'utente a '/index.html' con un messaggio di errore
-            res.redirect('/index.html?loginError=EmailNonTrovata');
+            // Utente non trovato, reindirizza l'utente a '/index.html' con un messaggio di errore
+            res.redirect('/index.html?loginError=UtenteNonTrovato');
         }
     });
 });

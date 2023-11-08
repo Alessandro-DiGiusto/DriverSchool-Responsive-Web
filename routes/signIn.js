@@ -3,6 +3,10 @@ const router = express.Router();
 const mysql = require('../sql');
 const bcrypt = require('bcrypt');
 
+function fixUpperCase(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 router.post('/', async (req, res) => {
     const { nome, cognome, email, telefono, password, passwordConferma } = req.body;
 
@@ -32,9 +36,12 @@ router.post('/', async (req, res) => {
                 return res.status(500).send('Si è verificato un errore durante la registrazione.');
             }
 
+            const nameFixed = fixUpperCase(nome);
+            const cognomeFixed = fixUpperCase(cognome);
+
             const insertQuery = 'INSERT INTO Utente (nome, cognome, email, tel, pw) VALUES (?,?,?,?,?);';
 
-            mysql.query(insertQuery, [nome, cognome, email, telefono, hashedPassword], (insertError, insertResults) => {
+            mysql.query(insertQuery, [nameFixed, cognomeFixed, email, telefono, hashedPassword], (insertError, insertResults) => {
                 if (insertError) {
                     console.error('Errore durante l\'inserimento dei dati:', insertError);
                     return res.status(500).send('Si è verificato un errore durante la registrazione.');
