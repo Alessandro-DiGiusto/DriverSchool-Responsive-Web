@@ -34,8 +34,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,400i,500,700,900');
 /*------------
- * DEAFULT CSS
- -------------*/
+     * DEAFULT CSS
+     -------------*/
 
 html,
 body {
@@ -166,8 +166,8 @@ ul>li>a {
 }
 
 /*----------------------
- * DEAFULT SECTION TITLE
- -----------------------*/
+     * DEAFULT SECTION TITLE
+     -----------------------*/
 
 .section_title {
     text-align: center;
@@ -201,7 +201,7 @@ ul>li>a {
     width: 8%;
 }
 
-/* .section_title h2 {} */
+.section_title h2 {}
 
 .section_title p {
     margin: 39px auto 46px;
@@ -213,8 +213,8 @@ ul>li>a {
 }
 
 /*---------------------
- * HEADER AREA CSS
- -------------------*/
+     * HEADER AREA CSS
+     -------------------*/
 
 .header_area {
     background: transparent none repeat scroll 0 0;
@@ -227,9 +227,9 @@ ul>li>a {
     padding: 50px 0;
 }
 
-/* .logo {}
+.logo {}
 
-.logo a {} */
+.logo a {}
 
 .col-md-3>img {
     margin-top: 50px;
@@ -242,8 +242,8 @@ ul>li>a {
 .logo a span {}
 
 /*---------------------
- * HEADER NAV MENU
- -------------------*/
+     * HEADER NAV MENU
+     -------------------*/
 
 .menu {}
 
@@ -313,8 +313,8 @@ ul>li>a {
 }
 
 /*----------------------
- * HEADER NAV MENU HOME-2
- -----------------------*/
+     * HEADER NAV MENU HOME-2
+     -----------------------*/
 
 .header_area2.sticker {
     background: #fff;
@@ -358,8 +358,8 @@ ul>li>a {
 }
 
 /*----------------------
- * HEADER NAV MENU HOME-3
- -----------------------*/
+     * HEADER NAV MENU HOME-3
+     -----------------------*/
 
 .home_3.menu>ul>li>a:before {
     background: #a73688;
@@ -378,8 +378,8 @@ ul>li>a {
 }
 
 /*------------------------
- * SLIDER AREA CSS HOME-2
- ------------------------*/
+     * SLIDER AREA CSS HOME-2
+     ------------------------*/
 
 .slider_area {
     background-image: url("img/slider/3.jpg");
@@ -442,8 +442,8 @@ ul>li>a {
 }
 
 /*----------------------
- * SLIDER BUTTON CSS
- -----------------------*/
+     * SLIDER BUTTON CSS
+     -----------------------*/
 
 .slider_btn>a {
     border: 1px solid #fff;
@@ -467,8 +467,8 @@ ul>li>a {
 }
 
 /*----------------------
- * SLIDER AREA HOME-1 CSS
- -----------------------*/
+     * SLIDER AREA HOME-1 CSS
+     -----------------------*/
 
 .pd0 {
     padding: 0px;
@@ -699,8 +699,8 @@ a.actice-button:hover {
 }
 
 /*------------------------
- * SLIDER AREA CSS HOME-3
- ------------------------*/
+     * SLIDER AREA CSS HOME-3
+     ------------------------*/
 
 .home_3.slider_area {
     background-image: url("img/slider/7.jpg");
@@ -721,8 +721,8 @@ a.actice-button:hover {
 }
 
 /*------------------------
- * ABOUT AREA CSS
- ------------------------*/
+     * ABOUT AREA CSS
+     ------------------------*/
 
 .about-area {
     background: #f8f8f8 none repeat scroll 0 0;
@@ -795,8 +795,8 @@ p.story-2 {
 
 
 /*----------------
- * TAB CSS
- -----------------*/
+     * TAB CSS
+     -----------------*/
 
 .tab_area.home-3 {
     padding: 100px 0px 80px;
@@ -858,8 +858,8 @@ p.story-2 {
 }
 
 /*------------------------
- * VIDEO GALARY CSS
- ------------------------*/
+     * VIDEO GALARY CSS
+     ------------------------*/
 
 .vedeo_gallary {
     position: relative;
@@ -888,8 +888,8 @@ p.story-2 {
 }
 
 /*-------------------
- * FEATURE  AREA CSS
- --------------------*/
+     * FEATURE  AREA CSS
+     --------------------*/
 
 .feature_area {
     padding: 94px 0 70px;
@@ -951,8 +951,8 @@ p.story-2 {
 }
 
 /*-------------------------
- * FEATURE  AREA CSS HOME-2
- -------------------------*/
+     * FEATURE  AREA CSS HOME-2
+     -------------------------*/
 
 .home_2 .single_feature {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
@@ -974,8 +974,8 @@ p.story-2 {
 }
 
 /*-------------------------
- * FEATURE  AREA CSS HOME-3
- -------------------------*/
+     * FEATURE  AREA CSS HOME-3
+     -------------------------*/
 
 .home_3 .single_feature {
     background: #a73688;
@@ -1011,8 +1011,8 @@ p.story-2 {
 }
 
 /*---------------------
- * READ MORE BUTTON CSS
- ----------------------*/
+     * READ MORE BUTTON CSS
+     ----------------------*/
 
 .read_more_btn {
     margin-top: 23px;
@@ -1042,8 +1042,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * READ MORE BUTTON CSS HOME-2
- ----------------------------*/
+     * READ MORE BUTTON CSS HOME-2
+     ----------------------------*/
 
 .home_2 .read_more_btn a {
     border: 1px solid #a73688;
@@ -1057,8 +1057,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * READ MORE BUTTON CSS HOME-3
- ----------------------------*/
+     * READ MORE BUTTON CSS HOME-3
+     ----------------------------*/
 
 .home_3 .read_more_btn a {
     border: 1px solid #fff;
@@ -1072,8 +1072,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO AREA CSS
- ----------------------------*/
+     * PORTFOLIO AREA CSS
+     ----------------------------*/
 
 .portfolio_area {
     background: #f8f8f8 none repeat scroll 0 0;
@@ -1083,8 +1083,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO NAV CSS
- ----------------------------*/
+     * PORTFOLIO NAV CSS
+     ----------------------------*/
 
 .portfolio_nav {
     text-align: center;
@@ -1119,8 +1119,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO NAV CSS HOME-2
- ----------------------------*/
+     * PORTFOLIO NAV CSS HOME-2
+     ----------------------------*/
 
 .home_2 .portfolio_nav ul li:hover {
     border-color: #a73688;
@@ -1136,8 +1136,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO NAV CSS HOME-2
- ----------------------------*/
+     * PORTFOLIO NAV CSS HOME-2
+     ----------------------------*/
 
 .home_3 .portfolio_nav ul li:hover {
     border-color: #a73688;
@@ -1153,8 +1153,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * SINGLE PORTFOLIO
- ----------------------------*/
+     * SINGLE PORTFOLIO
+     ----------------------------*/
 
 .single_portfolio {
     overflow: hidden;
@@ -1253,8 +1253,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO AREA CSS HOME-2
- ----------------------------*/
+     * PORTFOLIO AREA CSS HOME-2
+     ----------------------------*/
 
 .home_2 .single_portfolio_thumb:before {
     background: rgba(255, 94, 0, .8);
@@ -1265,8 +1265,8 @@ p.story-2 {
 }
 
 /*---------------------------
- * PORTFOLIO AREA CSS HOME-3
- ----------------------------*/
+     * PORTFOLIO AREA CSS HOME-3
+     ----------------------------*/
 
 .home_3 .single_portfolio_thumb:before {
     background: rgba(27, 188, 155, .8);
@@ -1277,8 +1277,8 @@ p.story-2 {
 }
 
 /*----------------
- * COURSE AREA CSS
- -----------------*/
+     * COURSE AREA CSS
+     -----------------*/
 
 .our_course {
     padding: 94px 0 70px;
@@ -1390,8 +1390,8 @@ p.story-2 {
 }
 
 /*----------------------
- * COURSE AREA CSS HOME-2
- -----------------------*/
+     * COURSE AREA CSS HOME-2
+     -----------------------*/
 
 .home_2 .single_course {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
@@ -1419,8 +1419,8 @@ p.story-2 {
 }
 
 /*----------------------
- * COURSE AREA CSS HOME-3
- ----------------------*/
+     * COURSE AREA CSS HOME-3
+     ----------------------*/
 
 .home_3 .coourse_content a:hover {
     color: #a73688;
@@ -1456,8 +1456,8 @@ p.story-2 {
 }
 
 /*----------------
- * COUNTER AREA CSS
- -----------------*/
+     * COUNTER AREA CSS
+     -----------------*/
 
 .counter-area {
     background: rgba(0, 0, 0, 0) url("img/slider/4.jpg") repeat scroll 0 0 / cover;
@@ -1514,8 +1514,8 @@ p.story-2 {
 }
 
 /*-----------------------
- * COUNTER AREA CSS HOME-2
- ------------------------*/
+     * COUNTER AREA CSS HOME-2
+     ------------------------*/
 
 .home_2 .counter-icon i {
     border: 2px solid #a73688;
@@ -1523,8 +1523,8 @@ p.story-2 {
 }
 
 /*-----------------------
- * COUNTER AREA CSS HOME-2
- ------------------------*/
+     * COUNTER AREA CSS HOME-2
+     ------------------------*/
 
 .home_3 .counter-icon i {
     border: 2px solid #a73688;
@@ -1532,8 +1532,8 @@ p.story-2 {
 }
 
 /*--------------
- * TEAM AREA CSS
- ---------------*/
+     * TEAM AREA CSS
+     ---------------*/
 
 .team_area {
     padding: 95px 0 70px;
@@ -1640,8 +1640,8 @@ p.story-2 {
 }
 
 /*-------------------
- * TEAM AREA HOVER CSS
- --------------------*/
+     * TEAM AREA HOVER CSS
+     --------------------*/
 
 .team-icon a:hover {
     background: #fff;
@@ -1660,8 +1660,8 @@ p.story-2 {
 }
 
 /*--------------------
- * TEAM AREA CSS HOME-2
- ---------------------*/
+     * TEAM AREA CSS HOME-2
+     ---------------------*/
 
 .home_2 .single-team:before {
     background: #a73688;
@@ -1691,8 +1691,8 @@ p.story-2 {
 }
 
 /*--------------------
- * TEAM AREA CSS HOME-3
- ---------------------*/
+     * TEAM AREA CSS HOME-3
+     ---------------------*/
 
 .home_3 .single-team:before {
     background: #a73688;
@@ -1756,8 +1756,8 @@ p.story-2 {
 }
 
 /*---------------
- * VIDEO AREA CSS
- ----------------*/
+     * VIDEO AREA CSS
+     ----------------*/
 
 .video-area {
     background-attachment: fixed;
@@ -1824,24 +1824,24 @@ p.story-2 {
 }
 
 /*----------------------
- * VIDEO AREA CSS HOME-2
- ----------------------*/
+     * VIDEO AREA CSS HOME-2
+     ----------------------*/
 
 .home_2.video-area:before {
     background: rgba(0, 0, 0, .7);
 }
 
 /*----------------------
- * VIDEO AREA CSS HOME-3
- ----------------------*/
+     * VIDEO AREA CSS HOME-3
+     ----------------------*/
 
 .home_3.video-area:before {
     background: rgba(0, 0, 0, .7);
 }
 
 /*------------------
- * PRICING  AREA CSS
- -------------------*/
+     * PRICING  AREA CSS
+     -------------------*/
 
 .pricing_content {
     margin-top: 15px;
@@ -1954,8 +1954,8 @@ p.story-2 {
 }
 
 /*------------------------
- * PRICING  AREA CSS HOME-2
- ------------------------*/
+     * PRICING  AREA CSS HOME-2
+     ------------------------*/
 
 .home_2 .pricing_title {
     border-top: 1px solid #a73688;
@@ -1986,8 +1986,8 @@ p.story-2 {
 }
 
 /*------------------------
- * PRICING  AREA CSS HOME-3
- ------------------------*/
+     * PRICING  AREA CSS HOME-3
+     ------------------------*/
 
 .home_3 .pricing_title {
     border-top: 1px solid #a73688;
@@ -2018,8 +2018,8 @@ p.story-2 {
 }
 
 /*---------------------
- * TESTIMONIAL  AREA CSS
- ----------------------*/
+     * TESTIMONIAL  AREA CSS
+     ----------------------*/
 
 .testimonial_area {
     background: url(img/testimonial/slide-5.jpg);
@@ -2073,24 +2073,24 @@ p.story-2 {
 }
 
 /*-----------------------------
- * TESTIMONIAL  AREA CSS HOME-2
- -----------------------------*/
+     * TESTIMONIAL  AREA CSS HOME-2
+     -----------------------------*/
 
 .home_2 .test_name h4 sup {
     color: #a73688;
 }
 
 /*-----------------------------
- * TESTIMONIAL  AREA CSS HOME-2
- -----------------------------*/
+     * TESTIMONIAL  AREA CSS HOME-2
+     -----------------------------*/
 
 .home_3 .test_name h4 sup {
     color: #a73688;
 }
 
 /*-----------------
- * BLOG  AREA CSS
- -----------------*/
+     * BLOG  AREA CSS
+     -----------------*/
 
 .blog_area {
     padding: 95px 0 60px;
@@ -2292,8 +2292,8 @@ p.story-2 {
 }
 
 /*---------------------
- * BLOG  AREA CSS HOME-2
- ----------------------*/
+     * BLOG  AREA CSS HOME-2
+     ----------------------*/
 
 .home_2 .blog-meta-left .date {
     background: #a73688 none repeat scroll 0 0;
@@ -2331,8 +2331,8 @@ p.story-2 {
 }
 
 /*---------------------
- * BLOG  AREA CSS HOME-3
- ----------------------*/
+     * BLOG  AREA CSS HOME-3
+     ----------------------*/
 
 .home_3 .blog-meta span {
     color: #fff;
@@ -2378,8 +2378,8 @@ p.story-2 {
 }
 
 /*------------------
- * CONTACT  AREA CSS
- -------------------*/
+     * CONTACT  AREA CSS
+     -------------------*/
 
 .contact_me {
     background: #f8f8f8 none repeat scroll 0 0;
@@ -2445,8 +2445,8 @@ p.story-2 {
 }
 
 /*------------------------------
- * CONTACT  AREA SEND BUTTON CSS
- -------------------------------*/
+     * CONTACT  AREA SEND BUTTON CSS
+     -------------------------------*/
 
 .send_btn {
     border: 2px solid #44b272;
@@ -2475,8 +2475,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * CONTACT  AREA CSS HOME-2
- -------------------------*/
+     * CONTACT  AREA CSS HOME-2
+     -------------------------*/
 
 .home_2 .input_box input,
 .home_2 .input_box textarea {
@@ -2501,8 +2501,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * CONTACT  AREA CSS HOME-3
- -------------------------*/
+     * CONTACT  AREA CSS HOME-3
+     -------------------------*/
 
 .home_3 .input_box input,
 .home_3 .input_box textarea {
@@ -2559,8 +2559,8 @@ button.send_btn:hover {
 }
 
 /*---------------------
- * FOOTER TOP  AREA CSS
- ---------------------*/
+     * FOOTER TOP  AREA CSS
+     ---------------------*/
 
 .footer-top-area {
     padding: 96px 0 90px;
@@ -2579,8 +2579,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * FOOTER WIDGET TITLE CSS
- ------------------------*/
+     * FOOTER WIDGET TITLE CSS
+     ------------------------*/
 
 .footer_wid_title-footer2 h2 {
     color: #a73688;
@@ -2609,8 +2609,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * FOOTER WIDGET ABOUT CSS
- ------------------------*/
+     * FOOTER WIDGET ABOUT CSS
+     ------------------------*/
 
 .widget_about {}
 
@@ -2648,8 +2648,8 @@ button.send_btn:hover {
 }
 
 /*----------------------------
- * FOOTER WIDGET QUICK LINK CSS
- -----------------------------*/
+     * FOOTER WIDGET QUICK LINK CSS
+     -----------------------------*/
 
 .widget_link {}
 
@@ -2677,8 +2677,8 @@ button.send_btn:hover {
 }
 
 /*-----------------------------
- * FOOTER WIDGET RECENT POST CSS
- ------------------------------*/
+     * FOOTER WIDGET RECENT POST CSS
+     ------------------------------*/
 
 .widget_post {
     display: -webkit-box;
@@ -2771,8 +2771,8 @@ button.send_btn:hover {
 }
 
 /*---------------------------
- * FOOTER WIDGET SCHEDULE CSS
- ----------------------------*/
+     * FOOTER WIDGET SCHEDULE CSS
+     ----------------------------*/
 
 .widget_schedule {}
 
@@ -2859,8 +2859,8 @@ button.send_btn:hover {
 }
 
 /*---------------------------
- * FOOTER TOP AREA CSS HOME-2
- ---------------------------*/
+     * FOOTER TOP AREA CSS HOME-2
+     ---------------------------*/
 
 .home_2 .footer_wid_title h2:before {
     background: #a73688 none repeat scroll 0 0;
@@ -2900,8 +2900,8 @@ button.send_btn:hover {
 }
 
 /*---------------------------
- * FOOTER TOP AREA CSS HOME-3
- ---------------------------*/
+     * FOOTER TOP AREA CSS HOME-3
+     ---------------------------*/
 
 .home_3 .footer_wid_title h2:before {
     background: #a73688 none repeat scroll 0 0;
@@ -2937,8 +2937,8 @@ button.send_btn:hover {
 }
 
 /*-----------------------
- * FOOTER BOTTOM AREA CSS
- ------------------------*/
+     * FOOTER BOTTOM AREA CSS
+     ------------------------*/
 
 .footer-bottom-area {
     background: #191919 none repeat scroll 0 0;
@@ -2963,24 +2963,24 @@ button.send_btn:hover {
 }
 
 /*-----------------------------
- * FOOTER BOTTOM AREA CSS HOME-2
- -----------------------------*/
+     * FOOTER BOTTOM AREA CSS HOME-2
+     -----------------------------*/
 
 .home_2 .coppyright p span {
     color: #a73688;
 }
 
 /*-----------------------------
- * FOOTER BOTTOM AREA CSS HOME-3
- -----------------------------*/
+     * FOOTER BOTTOM AREA CSS HOME-3
+     -----------------------------*/
 
 .home_3 .coppyright p span {
     color: #a73688;
 }
 
 /*-----------------------------
- * GOOGLE MAP AREA CSS
- -----------------------------*/
+     * GOOGLE MAP AREA CSS
+     -----------------------------*/
 
 #googleMap {
     height: 408px;
@@ -2991,8 +2991,8 @@ button.send_btn:hover {
 }
 
 /*-------------------
- * BRIDCRUMB AREA CSS 
- --------------------*/
+     * BRIDCRUMB AREA CSS 
+     --------------------*/
 
 .project_brd_area {
     background: rgba(0, 0, 0, 0) url("img/blog/brd1.jpg") repeat scroll center center / cover;
@@ -3046,8 +3046,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * COURSE DETAILS AREA CSS 
- ------------------------*/
+     * COURSE DETAILS AREA CSS 
+     ------------------------*/
 
 .course_details_area {
     padding: 100px 0 85px;
@@ -3108,8 +3108,8 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * COURSE SIDEBAR AREA CSS 
- ------------------------*/
+     * COURSE SIDEBAR AREA CSS 
+     ------------------------*/
 
 .course_sidebar {
     margin-bottom: 50px;
@@ -3175,8 +3175,8 @@ button.send_btn:hover {
 }
 
 /*----------------------------
- * DEAFULT PLACEHOLDER AREA CSS 
- ------------------------------*/
+     * DEAFULT PLACEHOLDER AREA CSS 
+     ------------------------------*/
 
 ::-moz-placeholder {
     color: #333;
@@ -3199,11 +3199,11 @@ button.send_btn:hover {
 }
 
 /*------------------------
- * CURSOLE STYLE CSS
- ------------------------*/
+     * CURSOLE STYLE CSS
+     ------------------------*/
 /*------------------------------
- * CURSOLE STYLE ABOUT US HOME-2
- ------------------------------*/
+     * CURSOLE STYLE ABOUT US HOME-2
+     ------------------------------*/
 
 .carousel-style-about.owl-theme .owl-controls .owl-buttons div {
     background: #a73688;
@@ -3239,8 +3239,8 @@ button.send_btn:hover {
 }
 
 /*-------------------
- * CURSOLE STYLE BLOG
- --------------------*/
+     * CURSOLE STYLE BLOG
+     --------------------*/
 
 .cursole-style-blog.owl-theme .owl-controls .owl-buttons div {
     background: #44b272 none repeat scroll 0 0;
@@ -3276,40 +3276,40 @@ button.send_btn:hover {
 }
 
 /*------------------------------
- * CURSOLE STYLE BLOG HOME-2
- ------------------------------*/
+     * CURSOLE STYLE BLOG HOME-2
+     ------------------------------*/
 
 .home_2 .cursole-style-blog.owl-theme .owl-controls .owl-buttons div {
     background: #a73688;
 }
 
 /*------------------------------
- * CURSOLE STYLE BLOG HOME-3
- ------------------------------*/
+     * CURSOLE STYLE BLOG HOME-3
+     ------------------------------*/
 
 .home_3 .cursole-style-blog.owl-theme .owl-controls .owl-buttons div {
     background: #a73688;
 }
 
 /*------------------------------
- * CURSOLE STYLE COURSE HOME-2
- ------------------------------*/
+     * CURSOLE STYLE COURSE HOME-2
+     ------------------------------*/
 
 .home_2 .course_cursole_style.owl-theme .owl-controls .owl-buttons div {
     background: #a73688;
 }
 
 /*------------------------------
- * CURSOLE STYLE COURSE HOME-3
- ------------------------------*/
+     * CURSOLE STYLE COURSE HOME-3
+     ------------------------------*/
 
 .home_2 .course_cursole_style.owl-theme .owl-controls .owl-buttons div {
     background: #a73688;
 }
 
 /*--------------------------
- * CURSOLE STYLE COURSE AREA
- ---------------------------*/
+     * CURSOLE STYLE COURSE AREA
+     ---------------------------*/
 
 .course_cursole_style.owl-theme .owl-controls .owl-buttons div {
     background: #44b272 none repeat scroll 0 0;
@@ -3355,8 +3355,8 @@ button.send_btn:hover {
 }
 
 /*-------------------
- * CURSOLE STYLE TEAM 
- --------------------*/
+     * CURSOLE STYLE TEAM 
+     --------------------*/
 
 .team_cursole_style.owl-theme .owl-controls .owl-buttons div {
     background: #44b272 none repeat scroll 0 0;
@@ -3402,8 +3402,8 @@ button.send_btn:hover {
 }
 
 /*--------------------------
- * CURSOLE STYLE TESTIMONIAL  
- --------------------------*/
+     * CURSOLE STYLE TESTIMONIAL  
+     --------------------------*/
 
 .curosel-style.owl-theme .owl-controls .owl-buttons div {
     background: transparent;
@@ -3450,8 +3450,8 @@ button.send_btn:hover {
 }
 
 /*---------------------------------
- * CURSOLE STYLE TESTIMONIAL  HOME-2 
- ---------------------------------*/
+     * CURSOLE STYLE TESTIMONIAL  HOME-2 
+     ---------------------------------*/
 
 .home_2 .curosel-style.owl-theme .owl-controls .owl-buttons div {
     color: #a73688;
@@ -3469,8 +3469,8 @@ button.send_btn:hover {
 }
 
 /*---------------------------------
- * CURSOLE STYLE TESTIMONIAL  HOME-3 
- ---------------------------------*/
+     * CURSOLE STYLE TESTIMONIAL  HOME-3 
+     ---------------------------------*/
 
 .home_3 .curosel-style.owl-theme .owl-controls .owl-buttons div {
     color: #a73688;
@@ -3488,8 +3488,8 @@ button.send_btn:hover {
 }
 
 /*-----------------------
- * DEAFULT BLOG AREA CSS
- ------------------------*/
+     * DEAFULT BLOG AREA CSS
+     ------------------------*/
 
 .default-blog {
     padding: 80px 0;
@@ -3592,8 +3592,8 @@ blockquote {
 }
 
 /*-----------------
- * POST REPLY  CSS
- ------------------*/
+     * POST REPLY  CSS
+     ------------------*/
 
 .post_comment {}
 
@@ -3671,8 +3671,8 @@ blockquote {
 .post_reply p {}
 
 /*--------------------
- * COMMENTST FORM  CSS
- ---------------------*/
+     * COMMENTST FORM  CSS
+     ---------------------*/
 
 .comment_field {}
 
@@ -3724,11 +3724,11 @@ blockquote {
 }
 
 /*--------------------
- * BLOG SIDEBAR  CSS
- ---------------------*/
+     * BLOG SIDEBAR  CSS
+     ---------------------*/
 /*--------------------
- * SEARCH WIDGET CSS
- ---------------------*/
+     * SEARCH WIDGET CSS
+     ---------------------*/
 
 .blog-left-side.widget {}
 
@@ -3783,8 +3783,8 @@ blockquote {
 .search button i {}
 
 /*--------------------
- * CATAGORY WIDGET CSS
- ---------------------*/
+     * CATAGORY WIDGET CSS
+     ---------------------*/
 
 .category {}
 
@@ -3815,8 +3815,8 @@ blockquote {
 }
 
 /*--------------------
- * TAG WIDGET CSS
- ---------------------*/
+     * TAG WIDGET CSS
+     ---------------------*/
 .tags {}
 
 .tags a {}
@@ -3836,8 +3836,8 @@ blockquote {
 }
 
 /*----------------------
- * RECENT POST WIDGET CSS
- ----------------------*/
+     * RECENT POST WIDGET CSS
+     ----------------------*/
 
 .recent-post {}
 
@@ -3893,8 +3893,8 @@ blockquote {
 }
 
 /*---------------------
- * INSTAGRAPH WIDGET CSS
- ---------------------*/
+     * INSTAGRAPH WIDGET CSS
+     ---------------------*/
 
 .instagraph {}
 
@@ -3949,13 +3949,13 @@ blockquote {
 }
 
 /*
-.home_2.sm-dvice {
-    padding: 50px 0;
-}
-*/
+    .home_2.sm-dvice {
+        padding: 50px 0;
+    }
+    */
 /*------------------------
- * BLOG AREA PAGINATION CSS
- -------------------------*/
+     * BLOG AREA PAGINATION CSS
+     -------------------------*/
 
 .paginations {
     text-align: center;
@@ -3993,8 +3993,8 @@ blockquote {
 }
 
 /*--------------------
- * SCROLL UP CSS
- ---------------------*/
+     * SCROLL UP CSS
+     ---------------------*/
 
 #scrollUp {
     background: #a73688 none repeat scroll 0 0;
@@ -4013,8 +4013,8 @@ blockquote {
 }
 
 /*---------------------------
- * SLIDER APPLICATION FORM CSS
- ----------------------------*/
+     * SLIDER APPLICATION FORM CSS
+     ----------------------------*/
 .application-form {}
 
 .app-content {
@@ -4059,6 +4059,17 @@ blockquote {
 .app-field span {
     color: #44B272;
     left: 10px;
+    top: 50%;
+    position: absolute;
+    font-size: 14px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* style eye */
+.app-field .password-toggle {
+    color: #44B272;
+    left: 150px;
     top: 50%;
     position: absolute;
     font-size: 14px;
@@ -4117,8 +4128,10 @@ blockquote {
 }
 
 .app-btn {
-    padding: 5px 15px 20px;
+    padding: 5px 15px 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .app-btn>button {
@@ -4304,6 +4317,23 @@ select:focus {
 .blog-meta.sicon .blog-meta-left a:hover i,
 .blog-meta.sicon .blog-meta-left a:hover {
     color: #44b272;
+}
+
+.link-signIn_onform {
+    font-size: 0.7rem;
+    padding-top: 10px;
+}
+
+/* Stile per nascondere la password per impostazione predefinita */
+#password[type="password"] {
+    background: url('eye-slash.png') no-repeat right;
+    background-size: 20px;
+}
+
+/* Stile per mostrare l'occhio aperto quando la password è visibile */
+#password[type="text"] {
+    background: url('eye.png') no-repeat right;
+    background-size: 20px;
 }
 
 /* -------------------------- */
