@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="/script.js" type="text/javascript"></script>
+
+    <!--Bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--Dayschedule widget library from https://dayschedule.com/widget -->
+    <script src="https://cdn.jsdelivr.net/npm/dayschedule-widget@latest/dist/dayschedule-widget.min.js" defer></script>
+    <script>
+        daySchedule.initPopupWidget({
+            "url": "https://provautoscuolaalvolante.dayschedule.com",
+            "type": "popup",
+            "color": {
+                "primary": "#0f0980",
+                "secondary": "#afeefe"
+            }
+        })
+    </script>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="/public/css/loginOK.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> Qui ci devo mettere il logo </a>
+            </div>
+            <div class="logout" style="padding-right: 2rem; border-radius: 50%;">
+                <a href="index.html"> <button class="button button2">Esci</button></a>
+            </div>
+            <style>
+                .button {
+                    background-color: #4CAF50;
+                    /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                    border-radius: 30px;
+                }
+
+                .button2:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+        </nav>
+    </header>
+    <div class="container px-3 my-5">
+        <main>
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    Che bello rivederti
+                    <div class="userContact">
+                        <h1>
+                            <%= nomeUtente %>
+                        </h1>
+                    </div>
+
+                    <h3 style="font-size: 14px;">
+                        email: <%= emailUtente %>
+                    </h3>
+                    <h3 style="font-size: 14px;">
+                        Contatto telefonico: +39 <%= telUtente %>
+                    </h3>
+
+                    <p>Grazie per aver effettuato l'accesso al nostro sito.</p>
+                    <p>Puoi iniziare a utilizzare le funzionalità riservate agli utenti registrati.</p>
+                </div>
+                <div class="col-md-6-fluido">
+                    <img src="/public/img/galary/login-photo/foto-login.png" class="img-fluido" />
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">Prenota per conto di</div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= cognomeUtente %>
+                            </h5>
+                            <p class="card-text">
+                                Prenota la tua guida! <br> <em>* ricorda</em> puoi modificare le tue prenotazioni solo
+                                con
+                                un
+                                giorno in anticipo!
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="openDaySchedule('https://provautoscuolaalvolante.dayschedule.com')">
+                                Prenota
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">Prenota prova</div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-transform: uppercase;">
+                                <%= cognomeUtente %>
+                            </h5>
+                            <p class="card-text">
+                                Prenota la tua guida! <br> <em>* ricorda</em> puoi modificare le tue prenotazioni solo
+                                con
+                                un
+                                giorno in anticipo!
+                            </p>
+                            <input type="date">
+                            <button class="btn btn-primary">Prenota</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="page-footer font-small pt-4 px-4">
+        <!-- Footer Text -->
+        <div class="container d-flex justify-content-center">
+            <p>©</p>
+            <p class="copyAnno_P" style="padding-right: 3px;"></p>
+            <p>Copyright autoscuolealvolante.com Autoscuole Al Volante di Salvatore Torrisi S.r.l.s</p>
+        </div>
+        <!-- Footer Text -->
+    </footer>
+</body>
+<script>
+    function copyAnno() {
+        var dataCorrente = new Date();
+        var annoCorrente = dataCorrente.getFullYear();
+        return annoCorrente;
+    }
+
+    function aggiornaAnno() {
+        var valore = document.querySelector('.copyAnno_P');
+        if (valore) {
+            var nuovoValore = copyAnno();
+            valore.textContent = nuovoValore;
+        }
+    }
+
+    window.addEventListener('load', aggiornaAnno);
+
+    //------
+
+    // Ottieni il nome dell'utente dal valore inserito nella pagina dal server
+    const nomeUtente = "<%= nomeUtente %>"; // Utilizzo di una variabile server-side
+    // Inserisci il nome dell'utente nell'elemento HTML
+    document.getElementById('nomeUtente').textContent = nomeUtente;
+
+    // Ottieni il valore di logUtente
+    const logUtente = "<%= logUtente %>"; // Assicurati che logUtente contenga la data corretta
+
+    // Funzione per formattare la data e l'orario
+    function formatDateTime(dateTimeString) {
+        const date = new Date(dateTimeString);
+        const options = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+        const formattedDateTime = date.toLocaleDateString('it-IT', options);
+
+        return formattedDateTime;
+    }
+
+    const formattedDateTime = formatDateTime(logUtente);
+    document.getElementById('provaaa').textContent = formattedDateTime;
+
+
+</script>
+
+</html>

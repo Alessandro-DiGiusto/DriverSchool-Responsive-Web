@@ -4,6 +4,17 @@ dotenv.config()
 const fs = require('fs');
 
 const pool = mysql.createPool({
+<<<<<<< HEAD
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
+}).promise()
+
+async function getUtenti() {
+  const [rows] = await pool.query("SELECT * FROM Utente")
+  return rows;
+=======
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
@@ -13,6 +24,7 @@ const pool = mysql.createPool({
 async function getUtenti() {
     const [rows] = await pool.query("SELECT * FROM Utente")
     return rows;
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
 }
 
 const lista_utenti = await getUtenti()
@@ -43,6 +55,8 @@ data.forEach((item) => {
     console.log('Dati inseriti con successo:', results);
   });
 });
+<<<<<<< HEAD
+=======
 connection.end((err) => {
   if (err) {
     console.error('Errore nella chiusura della connessione:', err);
@@ -50,4 +64,5 @@ connection.end((err) => {
     console.log('Connessione al database chiusa con successo.');
   }
 });
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
 /* --------------------------------------------------------------------------------------------------------- */

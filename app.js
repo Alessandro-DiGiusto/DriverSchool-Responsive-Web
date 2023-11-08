@@ -4,40 +4,47 @@ const port = process.env.PORT || 8000; // this is our port number
 const fs = require('fs');
 const bookingRoutes = require('./routes/bookings');
 const signInRoutes = require('./routes/signIn');
+<<<<<<< HEAD
+const loginRoutes = require('./routes/login');
+const path = require('path');
+=======
 
 //NEW
 const bodyParser = require('body-parser');
 //NEW
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
 
 const app = express(); // this is our app or instance of express
-
+const ejs = require('ejs');
 
 // API Middelwares
-app.use(express.json()); //this is to accept data in json format
-app.use(express.urlencoded()); // this is basically to decode the data send through html form
+app.use(express.json()); // this is to accept data in JSON format
+app.use(express.urlencoded({ extended: false })); // this is to decode the data sent through an HTML form
 app.use(express.static('public'));
 app.use(cors());
 
-//NEW
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
+/* app.use(bodyParser.urlencoded({ extended: false }); */
+/* app.use(bodyParser.json(); */
 
 app.use('/prenota', bookingRoutes);
 app.use('/signIn', signInRoutes);
+<<<<<<< HEAD
+app.use('/login', loginRoutes);
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+=======
 
 //NEW
+>>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
 
 // API ROUTES
-app.get('/', (request, responseC) => {
+app.get('/', (request, response) => {
   const message = req.query.message || '';
   res.sendFile(__dirname + '/public/index.html');
-  responseC.sendFile(path.join(__dirname, "style.css"))
+  response.sendFile(path.join(__dirname, "style.css"));
 });
 
-// This is Basically to listen on port 
+// This is Basically to listen on port
 app.listen(port, () => {
-  console.log('Server started at http://localhost:${port}')
+  console.log(`Server started at http://localhost:${port}`);
 });
-
-
