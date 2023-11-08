@@ -4,38 +4,15 @@ dotenv.config()
 const fs = require('fs');
 
 const pool = mysql.createPool({
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> d83835855bae429686c833af04593e0020fa8e60
   host: process.env.MYSQL_HOST,
   user: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   database: process.env.MYSQL_DATABASE
-<<<<<<< HEAD
 }).promise()
 
 async function getUtenti() {
   const [rows] = await pool.query("SELECT * FROM Utente")
   return rows;
-=======
-}).promise()
-
-async function getUtenti() {
-  const [rows] = await pool.query("SELECT * FROM Utente")
-  return rows;
-=======
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
-}).promise()
-
-async function getUtenti() {
-    const [rows] = await pool.query("SELECT * FROM Utente")
-    return rows;
->>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
->>>>>>> d83835855bae429686c833af04593e0020fa8e60
 }
 
 const lista_utenti = await getUtenti()
@@ -66,17 +43,4 @@ data.forEach((item) => {
     console.log('Dati inseriti con successo:', results);
   });
 });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-connection.end((err) => {
-  if (err) {
-    console.error('Errore nella chiusura della connessione:', err);
-  } else {
-    console.log('Connessione al database chiusa con successo.');
-  }
-});
->>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
->>>>>>> d83835855bae429686c833af04593e0020fa8e60
 /* --------------------------------------------------------------------------------------------------------- */

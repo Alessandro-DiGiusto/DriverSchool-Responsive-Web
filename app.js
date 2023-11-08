@@ -4,20 +4,8 @@ const port = process.env.PORT || 8000; // this is our port number
 const fs = require('fs');
 const bookingRoutes = require('./routes/bookings');
 const signInRoutes = require('./routes/signIn');
-<<<<<<< HEAD
 const loginRoutes = require('./routes/login');
 const path = require('path');
-=======
-<<<<<<< HEAD
-const loginRoutes = require('./routes/login');
-const path = require('path');
-=======
-
-//NEW
-const bodyParser = require('body-parser');
-//NEW
->>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
->>>>>>> d83835855bae429686c833af04593e0020fa8e60
 
 const app = express(); // this is our app or instance of express
 const ejs = require('ejs');
@@ -33,20 +21,9 @@ app.use(cors());
 
 app.use('/prenota', bookingRoutes);
 app.use('/signIn', signInRoutes);
-<<<<<<< HEAD
 app.use('/login', loginRoutes);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-=======
-<<<<<<< HEAD
-app.use('/login', loginRoutes);
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-=======
-
-//NEW
->>>>>>> 6eb2fb79ea43107387b2ea3bda9247675750d93c
->>>>>>> d83835855bae429686c833af04593e0020fa8e60
 
 // API ROUTES
 app.get('/', (request, response) => {
