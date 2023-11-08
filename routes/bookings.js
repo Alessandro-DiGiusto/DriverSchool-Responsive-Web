@@ -10,14 +10,6 @@ router.get('/list', (req, res) => {
         }
         res.json(results);
     });
-
-    mysql.end((err) => {
-        if (err) {
-            console.error('Errore nella chiusura della connessione:', err);
-        } else {
-            console.log('Connessione al database chiusa con successo.');
-        }
-    });
 })
 
 router.post('/', (req, res) => {
@@ -31,14 +23,6 @@ router.post('/', (req, res) => {
             throw error;
         }
         console.log('Dati inseriti con successo:', results);
-    });
-
-    mysql.end((err) => {
-        if (err) {
-            console.error('Errore nella chiusura della connessione:', err);
-        } else {
-            console.log('Connessione al database chiusa con successo.');
-        }
     });
 
     res.redirect(req.originalUrl.split("prenota")[0] + "?bookingStatus=success");
